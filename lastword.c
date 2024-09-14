@@ -12,7 +12,7 @@ int main(int ac,char **av)
 		{
 			i--;
 		}
-		while(av[1][i - 1] != 32)
+		while(av[1][i - 1] != 32 && i > 0)
 		{
 			i--;
 		}

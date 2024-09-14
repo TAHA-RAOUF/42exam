@@ -1,21 +1,22 @@
 #include <unistd.h>
-int ft_strlen(char *str)
+
+char *rev_print(char * str)
 {
-	int i = 0;
-	while(str[i])
-	{
-		i++;
+	int j = 0;
+	while(str[j])
+		j++;
+	while(j--)
+	{	
+		write(1,&str[j],1);
 	}
-	return(i);
+	return(str);
 }
-int len;
-int main(int ac,char **av)
+int main(void)
 {
-	if(ac == 2)
-	{
-		len = ft_strlen(av[1]);  
-		while(len--)
-		 	write(1,&av[1][len],1);
-	}
-	write(1,"\n",1);
+  rev_print("Hello world");
+  write (1, "\n", 1);
+  rev_print("tnirp esreveR");
+  write (1, "\n", 1);
+  rev_print("");
+  write (1, "\n", 1);
 }
