@@ -1,33 +1,48 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: moraouf <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/09/08 12:04:22 by moraouf           #+#    #+#             */
+/*   Updated: 2024/09/08 12:04:32 by moraouf          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 
-int i = 0;
-int j;
-
-char *ft_strstr(char *str, char *to_find)
+char	*ft_strstr(char *str, char *tofind)
 {
-	int i = 0;
-	int j;
+	int	i;
+	int	j;
 
-	if(to_find(0) == '\0')
-		return(str);
-	else 
+	i = 0;
+	if (tofind[0] == '\0')
 	{
-		j = 0;
-		while(to_find(j) && str[i+j] == to_find(j))
-		{
-			j++;
-		}
-		if(to_find(j))
-		{
-			return(&str[i]);
-		}
-		i++;
+		return (str);
 	}
-	return(0);
+	else
+	{
+		while (str[i])
+		{
+			j = 0;
+			while (tofind[j] && str[i + j] == tofind[j])
+			{
+				j++;
+			}
+			if (tofind[j] == '\0')
+			{
+				return (&str[i]);
+			}
+			i++;
+		}
+	}
+	return (0);
 }
 int main()
 {
-	char c[] = "hello world"
+	char c[] = "Hello world";
 	char to[] = "wo";
 	printf("%s",ft_strstr(c,to));
 }
