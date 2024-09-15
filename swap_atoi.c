@@ -52,7 +52,7 @@ int main(int ac ,char **av)
 		num1 = num2;
 		num2 = tmp;
 		ft_putnbr(num1);
-		ft_putchar('\n');
+		ft_putchar(' ');
 		ft_putnbr(num2);
 	}
 }
