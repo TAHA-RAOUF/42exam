@@ -37,6 +37,7 @@ char *skip_space(char *str)
 {
 	int i = 0;
 	int j = 0;
+	printf("%d\n",isstring(str));
 	if(str[i] == '\0')
 	{
 		return(str);
@@ -55,7 +56,7 @@ char *skip_space(char *str)
 }
 int main()
 {
-	char c[] = "   yf      h        b  gs      hb ";
+	char c[] = "   yf      h   b  gs      hb ";
 	char *s = skip_space(c);
-	ft_putstr(s);
+	printf("%s",s);
 }

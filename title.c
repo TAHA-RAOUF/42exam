@@ -34,6 +34,6 @@ char *ft_title(char *str)
 }
 int main()
 {
-	char c[] = "salut, comMent tu vas ? 42mots quarante-deux; cinquante+et+un";
+	char c[] = " salut, comMent tu vas ? 42mots quarante-deux; cinquante+et+un";
 	printf("%s",ft_title(c));
 }

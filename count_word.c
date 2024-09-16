@@ -25,6 +25,6 @@ int count_word(char *str)
 }
 int main()
 {
-	char c[] = "taha is a good man ";
+	char c[] = "    t    aha is a good man ";
 	printf("%i",count_word(c));
 }
