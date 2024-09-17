@@ -25,7 +25,7 @@ int main()
 	while(i >= 0)
 	{
 
-		if(i % 2== 0)
+		if(i % 2 == 0)
 		{
 			int c = i;
 			ft_ptr(&c);	
