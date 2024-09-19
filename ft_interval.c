@@ -9,7 +9,7 @@ int main(int ac , char **av)
 		while(av[1][i])
 		{
 			index = i + 1;
-			if(index % 3 == 0 && index % 5 == 0 )
+			if(index % 3 == 0 && index % 5 == 0)
 			{
 				write(1,"5",1);
 			}

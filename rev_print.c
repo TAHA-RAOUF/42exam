@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-char *rev_print(char * str)
+char *rev_print(char *str)
 {
 	int j = 0;
 	while(str[j])
